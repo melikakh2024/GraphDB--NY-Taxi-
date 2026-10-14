@@ -24,7 +24,7 @@ E.g., JFK → A → Manhattan → JFK
 `question3: Extract multi-hop trip paths sharing the same origin location where the trip's `total_amount` exceeds $50
 
 * **Analytical Target:** Demonstrate the power of graph pattern matching for executing complex, multi-hop path analyses and filtering relational attributes seamlessly without heavy SQL `JOIN` operations.
-[query3.png](images/query3.png)
+[query3.png](images/query3%20.png)
 *
 ## 📈 Engineering Decisions
 
