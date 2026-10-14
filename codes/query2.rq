@@ -1,0 +1,8 @@
+PREFIX ns1: <http://example.org/>
+
+SELECT ?zone1 ?zone2
+WHERE {
+    ?zone1 ns1:hasToTrip+ ?zone2 .
+    FILTER(?zone1 = ?zone2)
+}
+LIMIT 50

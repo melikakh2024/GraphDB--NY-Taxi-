@@ -1,0 +1,16 @@
+PREFIX ns1: <http://example.org/>
+
+SELECT ?origin ?des1 ?des2 ?price ?price2
+WHERE {
+    ?trip  ns1:source           ?origin .
+    ?trip  ns1:destination      ?des1 .
+    ?trip  ns1:has_total_amount ?price .
+
+    ?trip2 ns1:source           ?des1 .
+    ?trip2 ns1:destination      ?des2 .
+    ?trip2 ns1:has_total_amount ?price2 .
+
+    FILTER(?price > 50)
+    FILTER(?price2 > 50)
+}
+LIMIT 100
